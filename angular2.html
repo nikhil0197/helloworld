@@ -1,0 +1,23 @@
+
+<html>
+<head>
+<script src="angular.min.js"></script>
+<script src="script2.js"></script>
+
+</head>
+<body ng-app="myModule" style="font-family:Arial">
+<div ng-controller="myController">
+<ul>
+<li ng-repeat="country in countries">
+{{country.name}}-index={{$index}}
+<ul>
+<li ng-repeat="city in country.cities">
+{{city.name}}-index={{$index}}
+</li>
+</ul>
+
+</li>
+</ul>
+</div>
+</body>
+</html>
